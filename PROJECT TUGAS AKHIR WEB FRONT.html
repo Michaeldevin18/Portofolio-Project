@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME to E-Catering</title>
+    <style>
+        P {
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #1f0549;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 22px 22px;
+          text-decoration: none;
+          font-size: 25px;
+        }
+        
+        .topnav a:hover {
+          background-color: #d0e60b;
+          color: rgb(228, 15, 15);
+        }
+        
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        
+        .topnav-right {
+          float: right;
+        }
+        h1 {
+  font-size: 70px;
+}
+h1 {
+  line-height: 0;
+}
+p{line-height: 0;}
+.menu-button {
+  background-color: #e9ae0e;
+  color: #111111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: #3e8e41;
+  color: #fafafa;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu-button {
+  margin-left: 50px;
+}
+.wrapper {
+  height: 200px;
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  border: 5px solid #000;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+.box1 img {
+  object-fit: cover;
+}
+
+.box2 img {
+  object-fit: contain;
+}
+
+.box3 img {
+  object-fit: fill;
+}
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.circle img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #faf60b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+{
+  box-sizing: border-box;
+}
+
+.zoom {
+  padding: 1px;
+  background-color: rgb(10, 10, 10);
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 5px;
+  margin-top: 8px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 10px 10px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #7c7a7a;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+    </style>
+</head>
+<body style="background-image: url('Oranye dan Hijau Minimalis Modern Restoran Website UI Prototipe.jpg');">
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">TENTANG KAMI</button>
+                <div class="dropdown-content">
+                  <a href="PENJELASAN.html">PENJELASAN</a>
+                  <a href="PENJELASAN.html">PORTOFOLIO</a>
+                  <a href="PENJELASAN.html">CONTACT US</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">MENU KAMI</button>
+                <div class="dropdown-content">
+                  <a href="form menu.html">PAKET CATERING</a>
+                  <a href="form menu.html">PAKET PROMO</a>
+                  <a href="form menu.html">KOMPOSISI MENU</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">AKUN</button>
+                <div class="dropdown-content">
+                  <a href="form login.html">MASUK</a>
+                  <a href="form register.html">DAFTAR</a>
+
+                </div>
+              </div>
+              <div class="topnav-right">
+              <h5 style="color: white;font-size: 15px;margin-right: 20px;"><B> <img src="LAIN LAIN/logo 1.jpg.png" width= "30" height="19" style="display: inline-block; float: left;">LISA TART CATERING</B></H5>
+                
+                <div class="search-container">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                  </form>
+                </div>
+
+              </div>
+          </div>
+       
+    <BR>
+    <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="1" style="font-size:20px; color:red;"><h1>SELAMAT BERBELANJA</h1></marquee>
+    <br><br><br>
+      
+    <h1 style="color: white;margin-left: 50px;">PROMO</h1>
+    <BR>
+        <br>
+        <H1 style="color: white;margin-left: 50px;">RAMADHAN</H1>
+       
+    <br>
+    <p style="color: white;margin-left: 50px;">PERIODE SELAMA RAMADHAN</p>
+    <BR>
+        <p style="color: white;margin-left: 50px;">COCOK UNTUK BERBUKA PUASA BERSAMA KELUARGA</p>
+        <BR><BR>
+            <p style="color: white;margin-left: 50px;">Avaible Jam 16.00 - 19.00</p>
+        
+            <br>
+            <br>
+            
+            <button class="menu-button"><a href="form pemesanan.html"> PESAN SEKARANG </a></button>
+            <button class="menu-button"><a href="form pemesanan.html">RESERVASI</button>
+
+             
+            <br>
+            <br>
+            <div class="wrapper">
+             
+              <div class="box box1"><div class="zoom"><img src="GAMBAR MAKANAN/1715320755478-sup-kacang-merah.png" alt="a balloon"></div></div>
+                <div class="box box2"><div class="zoom"><img src="GAMBAR MAKANAN/6-makanan-buka-puasa-ramadhan-yang-sebaiknya-dihindari.jpg" alt="a balloon"></div></div>
+                <div class="box box3"><div class="zoom"><img src="GAMBAR MAKANAN/e801e0c5-ac87-4520-8ac5-6c0926896c3a.jpg" alt="a balloon"></div></div>
+                <div class="box box3"><div class="zoom"><img src="GAMBAR MAKANAN/52188249_2091746450922354_1102399512854251489_n.jpg" alt="a balloon"></div></div>
+              </div>
+
+</body>
+</html>
+
